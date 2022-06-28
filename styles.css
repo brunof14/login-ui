@@ -6,6 +6,11 @@
 
 :root {
   --bg-body: #fcfbfd;
+  --blue-300: #2d9cdb;
+  --blue-500: #2f80ed;
+  --gray-300: #f0eef0;
+  --gray-500: #e0dfe2;
+  --shadow-blue: rgba(45, 156, 219, 0.3);
 }
 
 body,
@@ -74,8 +79,8 @@ body {
   padding: 1rem;
   font-size: 1rem;
   border-radius: 4px;
-  border: 2px solid #e0dfe2;
-  background-color: #f0eef0;
+  border: 2px solid var(--gray-500);
+  background-color: var(--gray-300);
   outline: none;
 }
 
@@ -85,12 +90,12 @@ body {
 
 .form-input__element:focus {
   background-color: #fff;
-  border: 2px solid #2d9cdb;
-  box-shadow: 0 0 1px 3px rgba(45, 156, 219, 0.3);
+  border: 2px solid var(--blue-300);
+  box-shadow: 0 0 1px 3px var(--shadow-blue);
 }
 
 .form-button__element {
-  background-color: #2f80ed;
+  background-color: var(--blue-500);
   border: none;
   transition: background-color 0.2s ease-in-out;
   color: white;
@@ -100,21 +105,21 @@ body {
 
 .form-button__element:focus,
 .form-button__element:hover {
-  background-color: #2d9cdb;
+  background-color: var(--blue-300);
 }
 
 .form-button__element:focus {
-  box-shadow: 0 0 1px 3px rgba(45, 156, 219, 0.3);
+  box-shadow: 0 0 1px 3px var(--shadow-blue);
 }
 
-.forget-password {
+.has-account {
   margin-top: 2.875rem;
 }
 
 .link {
   text-decoration: none;
   font-weight: 500;
-  color: #2f80ed;
+  color: var(--blue-500);
 }
 
 .link--small {
@@ -122,6 +127,6 @@ body {
 }
 
 .link:hover {
-  color: #2d9cdb;
+  color: var(--blue-300);
   text-decoration: underline;
 }
