@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-body: #fcfbfd;
+}
+
+body,
+input,
+button {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--bg-body);
+}
+
+.container {
+  max-width: 28rem;
+  min-height: 100vh;
+  margin-inline: auto;
+  padding-inline: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.form-header__title {
+  font-size: 1.5rem;
+}
+
+.form {
+  width: 100%;
+}
+
+.form-input__header--space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.form-input + .form-input:last-of-type {
+  margin-bottom: 2.25rem;
+}
+
+.form-input__label {
+  font-size: 0.875rem;
+}
+
+.form-input__element,
+.form-button__element {
+  width: 100%;
+  height: 3.5rem;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 2px solid #e0dfe2;
+  background-color: #f0eef0;
+  outline: none;
+}
+
+.form-input__element {
+  transition: background-color, border-color 0.2s ease-in;
+}
+
+.form-input__element:focus {
+  background-color: #fff;
+  border: 2px solid #2d9cdb;
+  box-shadow: 0 0 1px 3px rgba(45, 156, 219, 0.3);
+}
+
+.form-button__element {
+  background-color: #2f80ed;
+  border: none;
+  transition: background-color 0.2s ease-in-out;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form-button__element:focus,
+.form-button__element:hover {
+  background-color: #2d9cdb;
+}
+
+.form-button__element:focus {
+  box-shadow: 0 0 1px 3px rgba(45, 156, 219, 0.3);
+}
+
+.forget-password {
+  margin-top: 2.875rem;
+}
+
+.link {
+  text-decoration: none;
+  font-weight: 500;
+  color: #2f80ed;
+}
+
+.link--small {
+  font-size: 0.875rem;
+}
+
+.link:hover {
+  color: #2d9cdb;
+  text-decoration: underline;
+}
